@@ -1,5 +1,5 @@
 var express = require('express');
-const { upload } = require("../services/multerConfig");
+const upload = require("../services/multerConfig");
 var router = express.Router();
 const { unlink } = require("fs/promises");
 const performOCR = require("../services/tesseractService")
