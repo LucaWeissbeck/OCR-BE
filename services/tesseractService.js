@@ -1,9 +1,10 @@
 const tesseract = require("node-tesseract-ocr")
+const germanData = "../data/tesseract_models/deu.traineddata"
 
 const config = {
-    lang: "eng", // deu for German
+    lang: "eng + deu", // German and English
     oem: 1,
-    psm: 3,
+    psm: 6,
 }
 
 const performOCR = async(imagePath) => {
