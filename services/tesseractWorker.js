@@ -1,5 +1,7 @@
 const tesseract = require("tesseract.js");
 
+
+// initialises the tesseract worker with start of API for reduced load time at API request
 const worker = tesseract.createWorker({
     logger: m => console.log(m)
 });
